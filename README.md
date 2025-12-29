@@ -130,7 +130,6 @@ mevault/
 │  ├─ api/
 │  │  ├─ file/          # upload/download API
 │  │  ├─ delete/        # delete API
-│  │  └─ updates/       # SSE API for real-time updates
 │  └─ file-list/        # UI components
 ├─ lib/
 │  └─ database/         # SQLite DB
