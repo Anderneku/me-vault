@@ -45,24 +45,16 @@ npm install
 yarn
 ```
 
-3. **Create uploads folder**:
+3. **uploads folder (file uploads go here)**:
 
 ```bash
-mkdir uploads
+/uploads
 ```
 
-4. **Create SQLite database**:
+4. **SQLite database (metadata on files)**:
 
 ```bash
-touch lib/database/files.db
-# Optionally, run your schema setup if needed
-```
-
-5. **Add `.gitignore`** to ignore local database:
-
-```
-lib/database/files.db
-uploads/
+/lib/database/files.db
 ```
 
 ---
@@ -70,10 +62,10 @@ uploads/
 ## Running the App
 
 ```bash
-npm run dev -- -H 0.0.0.0
+npm run dev
 ```
 
-* `-H 0.0.0.0` makes your server accessible to other devices on the same network
+* Be sure to use the host (server) IP (not localhost)
 * Access from your phone or other devices: `http://<PC_IP>:3000`
 
 ---
@@ -84,7 +76,7 @@ npm run dev -- -H 0.0.0.0
 
 * Click **Select Files** → choose a file
 * Upload progress is displayed
-* File list refreshes automatically via **SSE**
+* File list refreshes automatically
 
 ### Download a File
 
@@ -144,6 +136,7 @@ mevault/
 
 * Feel free to fork this and turn it into something more useful as this is very much in a 'skeletal' state.
 * You could pretty easily implement this app into an already existing local database as a more 'polished front' to access files across all your devices.
+* You could possibly implement soemthing like [pm2](https://www.npmjs.com/package/pm2) to have the server start running automatically on startup on your server/pc; I already have plans to add that in the future.
 
 ---
 
@@ -155,6 +148,7 @@ mevault/
 * Streaming/Viewing videos, audios and pictures directly on the app
 * Customisation
 * Real-time updates (I was lazy and used polling lol)
+* [pm2](https://www.npmjs.com/package/pm2) 'sevrer start on startup' implementation
 
 ---
 
