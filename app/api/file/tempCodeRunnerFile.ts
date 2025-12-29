@@ -1,0 +1,1 @@
+db.prepare("DELETE FROM files").run();
