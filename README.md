@@ -1,10 +1,10 @@
-Here’s a polished, comprehensive README for your **WLAN File Server** built with Next.js, shadcn UI, and SQLite, reflecting all the features you’ve been building:
-
 ---
 
 # MeVault – WLAN File Server
 
 A lightweight, local file server that allows devices on the same network to **upload, download, and manage files** in real-time. Built with **Next.js**, **shadcn UI**, and **SQLite**, optimized for **WLAN use**.
+<img width="1450" height="942" alt="image" src="https://github.com/user-attachments/assets/03376590-72d9-49d6-861b-390d3d1a90f8" />
+
 
 ---
 
